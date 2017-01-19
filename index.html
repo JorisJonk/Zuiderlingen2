@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>skrollr - parallax scrolling for the masses</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/javascript.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <div id="skrollr-body">
+        <div id="content">
+            <div id="nav" data-0="position:fixed;top:0;" data-top-top="position:fixed;top:0;" data-edge-strategy="set">
+                de Zuiderlingen
+            </div>
+            <!--placeholder div to prevent jumpy content when nav gets pinned-->
+            <div style="padding:1em;" data-0="display:none;" data-top-top="display:block;" data-anchor-target="#nav" data-edge-strategy="set">&nbsp;</div>
+            <wrapper>
+                <div class="testdiv">
+                </div>
+                <div>
+                    <div id="left" data-scroll-speed="-10" dats="7"> </div>
+                    <div id="middle" data-scroll-speed="-2" dats="-2"> </div>
+                    <div id="right" data-scroll-speed="-1" dats="-1"> </div>
+                </div>
+                <div class="bio">
+                    Het koor bestaat uit zo'n 30 vaste leden die op dinsdagavond bij elkaar komen in cafe 't Ginneken. Hier repeteren zij onder leiding van john. Het koor is toegankelijk voor iedereen die er plezier in heeft mee te zingen. Met of zonder koorervaring. Het
+                    gezongen repertoire bestaat veelal uit bekende liederen die goed in het oor vallen. <br> </br>Na de repetities wordt er nog gezellig een drankje gedaan. De afgelopen drie jaar hebben de Zuiderlingen een kerstconcert
+                    gegeven met liedjes als let it snow, christmas en stille nacht. Soms bijgestaan door gastsolist Paulien de Knitel en haar boyyyy Joris de Jonk. haha doei.
+                    <br></br>
+
+                    <button id="aanmeldbutton1" class="register_button" >Aanmelden als zanger </button>
+                    <input class="login_password" id="aanmeldinvoer1" placeholder=" Vul je emailadres in"></input>
+                    <button class="login_button" id="aanmeldsubmit1">zend</button>
+                    <br></br>
+                    <button class="register_button" id="aanmeldbutton2">Aanmelden voor de nieuwsbrief </button>
+                    <input class="login_password" id="aanmeldinvoer2" placeholder=" Vul je emailadres in"></input>
+                    <button class="login_button" id="aanmeldsubmit2">zend</button>
+                </div>
+                <div class="contact">
+                </div>
+                <div id="agenda">
+                    Agenda
+                    <br></br>
+                    <table id="agendatable">
+
+                    </table>
+                </div>
+
+
+            </wrapper>
+
+        </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="skrollr-master/dist/skrollr.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            skrollr.init({
+                forceHeight: false
+            });
+        }
+    </script>
+</body </html>
